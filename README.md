@@ -32,20 +32,13 @@ The main entry point of the application. It:
 - Sets up the routing using **react-router-dom**.
 - Defines routes for the homepage and the Python study page. 🏠➡️📚
 
-### `OpenAi.js`
-This file contains the logic for interacting with Google's **Generative AI API (Gemini)**:
-- Fetches responses to Python-related questions. 💬
-- API key is retrieved from the environment variable **REACT_APP_MY_GEMINI_API**. 🔑
+### `HomePage.js`
+The homepage of the application:
+- Provides an introduction to the app, its features, and a button to navigate to the Python study page. 🏠
 
-### `CardContent.js`
-Displays the introductory message from the selected tutor:
-- Overview of the topics like print statements, variables, basic math, and string manipulation. 🔤
-
-### `CardFooter.js`
-Handles user interaction:
-- Users can ask Python-related questions. ❓
-- Displays AI-generated responses. 💡
-- Shows toast notifications for user feedback. 🎉
+### `StudyPython.js`
+The main page for learning Python:
+- Integrates **CardHeader**, **CardContent**, **CardFooter**, and **Setting** components to provide an interactive learning experience. 🎓
 
 ### `CardHeader.js`
 Displays the header of the study card:
@@ -57,13 +50,20 @@ Allows users to:
 - Input their Google Generative AI API key. 🔑
 - Choose their preferred tutor from the available characters (Python, Robot, Wizard, Alien). 👨‍💻🤖🧙‍♂️👽
 
-### `HomePage.js`
-The homepage of the application:
-- Provides an introduction to the app, its features, and a button to navigate to the Python study page. 🏠
+### `CardContent.js`
+Displays the introductory message from the selected tutor:
+- Overview of the topics like print statements, variables, basic math, and string manipulation. 🔤
 
-### `StudyPython.js`
-The main page for learning Python:
-- Integrates **CardHeader**, **CardContent**, **CardFooter**, and **Setting** components to provide an interactive learning experience. 🎓
+### `CardFooter.js`
+Handles user interaction:
+- Users can ask Python-related questions. ❓
+- Displays AI-generated responses. 💡
+- Shows toast notifications for user feedback. 🎉
+
+### `OpenAi.js`
+This file contains the logic for interacting with Google's **Generative AI API (Gemini)**:
+- Fetches responses to Python-related questions. 💬
+- API key is retrieved from the environment variable **REACT_APP_MY_GEMINI_API**. 🔑
 
 ---
 
